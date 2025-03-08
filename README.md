@@ -6,3 +6,25 @@ Image segmentation is a very challenging task for image understanding because of
 https://brainweb.bic.mni.mcgill.ca/brainweb/
 ## Thesis link:
 https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=miami1556555486273
+
+
+## Requirements
+Python 3.x
+NumPy
+Matplotlib
+OpenCV
+scikit-fuzzy
+PIL
+Setup
+Ensure you have all required libraries installed. You can install them using pip:
+
+pip install numpy matplotlib opencv-python scikit-fuzzy pillow
+## Usage
+Reading and Processing Images: The script reads raw binary image data, processes it using fuzzy clustering, and visualizes the results.
+## Functions:
+readImageFromRawb(path): Reads an image from a raw binary file.
+change_color_fuzzycmeans(cluster_membership, clusters): Applies Fuzzy C-Means clustering to the image data.
+getColorImage(u, cntr, rows, cols): Generates a color-coded image based on cluster membership.
+
+
+
